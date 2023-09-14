@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="script.js"></script>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!--MENU Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JuanMa</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+            </nav>
+        </header>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <!--Seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contendor-img">
+                <img src="img/fotoMia.jpg" alt="">
+            </div>
+            <h1>Juan Manuel Galarza</h1>
+            <h2>Desarrollador FullStack</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100008303870751"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/juan-manuel-galarza-2019/?profileId=ACoAADcd7RIB9CsbIbHItUGO-T_n4zqZjZSqCZE"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/juanmaNoah"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Juan Manuel.</span> Soy Desarrollador FullStack,
+                 con conocimientos en entornos de desarrollos AWS y nube.
+                  He trabajado con distintos lenguajes de programación, estructurados y 
+                  orientados a objetos. Además, cuento con base de datos, 
+                  sistemas operativos, redes informáticas, entornos de desarrollos con Agiles y 
+                  métodos Kanban.</p><div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de Nacimiento</strong> 18-10-1994
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong> 011 38291606
+                        </li>
+                        <li>
+                            <strong>Email</strong> juanmanuelgalarza2@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong> Lomas de Zamora, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Deportes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+               <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+                <a href="archivos/PortafolioJuanManuel.pdf" download="cv">Descargar CV</a>
+                
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Perfil Tecnico</h3>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso react">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FastAPI</span>
+                        <div class="barra-skill">
+                            <div class="progreso fastapi">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavasCript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso c">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- habilidades  Skills -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo ">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Customer Experience</span>
+                        <div class="barra-skill">
+                            <div class="progreso customer">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico de Analista de Sistemas</h4>
+                        <span class="casa">Instituto tecnológico Beltrán.</span>
+                        <span class="fecha">2021- 2023</span>
+                        <p>Carrera en curso.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Personal trainer</h4>
+                        <span class="casa">Instituto Interval</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <p>Curso para poder desarrollarme en actividades deportivas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Chef Profesional</h4>
+                        <span class="casa">IGA</span>
+                        <span class="fecha">2013 - 2015</span>
+                        <p>Chef profesional y pastelero profesional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller en Economia</h4>
+                        <span class="casa">Medalla Milagrosa</span>
+                        <span class="fecha">2007 - 2012</span>
+                        <p>Secundario concluido con exito.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Backend</h4>
+                        <span class="casa">Carbany</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Proyecto de ERP realizado para la empresa Carbany, con desarrollo en cloud en nube AWS, utilizando las ultimas tecnologias.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Barista</h4>
+                        <span class="casa">Starbucks Coffe</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Barista certificado, con manejo de caja, Post.net y dedicado al Customer Experience para cada persona que sea atendida.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>CallCenter</h4>
+                        <span class="casa">Baires</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Venta de tangibles a potenciales compradores de autos de primera linea.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Croupier/Cajero</h4>
+                        <span class="casa">Casino Puerto Madero</span>
+                        <span class="fecha">2014 - 2022</span>
+                        <p>Croupier de Ruleta, Black Jack y Poker Caribeño.Cajero polivalente: manejo de efectivo, desembolso de dinero, depósitos, etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Gerente de area</h4>
+                        <span class="casa">MacDonals</span>
+                        <span class="fecha">2011 - 2014</span>
+                        <p>Gerente de área en el local del aeropuerto de Ezeiza. Personal a cargo durante los turnos de 9 horas. Manejo de Office, apertura, cierre y depósitos de caja.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/FotoJuego1.jpg" alt="">
+                    <div class="overlay">
+                        <img onclick="javascript:this.width=1000;this.height=800" ondblclick="javascript:this.width=1000;this.height=800" src="img/FotoJuego1.jpg" width="100" />
+                        <h3>Juego Snake en Python</h3>
+                        <p>Juego hecho en Python.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/paginaVeterinaria.jpg" alt="">
+                    <div class="overlay">
+                        <img onclick="javascript:this.width=1000;this.height=800" ondblclick="javascript:this.width=1000;this.height=800" src="img/paginaVeterinaria.jpg" width="100" />
+                        <h3>Pagina Veterinaria</h3>
+                        <p>Sistema de gestión de turnos para Veterinaria.<p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/JuegoPiedraPapelTijera.jpg" alt="">
+                    <div class="overlay">
+                        <img onclick="javascript:this.width=1000;this.height=800" ondblclick="javascript:this.width=1000;this.height=800" src="img/JuegoPiedraPapelTijera.jpg" width="100" />
+                        <h3>Juego Piedra,Papel o tijera</h3>
+                        <p>Juego hecho en C.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
